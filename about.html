@@ -1,9 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#13213f"/><stop offset="50%" stop-color="#5f3dc4"/><stop offset="100%" stop-color="#15aabf"/></linearGradient></defs>
-<rect width="1200" height="675" fill="url(#bg)"/>
-<circle cx="980" cy="140" r="130" fill="#ffd43b" opacity="0.18"/>
-<g fill="#ffffff" opacity="0.11"><rect x="120" y="420" width="120" height="180" rx="14"/><rect x="250" y="360" width="140" height="240" rx="14"/><rect x="410" y="300" width="110" height="300" rx="14"/><rect x="540" y="380" width="180" height="220" rx="14"/></g>
-<path d="M735 420c35-75 132-112 219-71 79 37 120 124 94 204-26 80-111 134-198 124-70-8-127-52-151-112l45-17c17 42 60 73 111 78 60 6 119-31 137-87 18-56-10-117-64-142-61-29-130-3-155 50z" fill="white" opacity="0.9"/>
-<text x="90" y="390" fill="white" font-size="96" font-family="Inter, Arial, sans-serif" font-weight="900">Fortnite</text>
-<text x="95" y="445" fill="#eef7ff" font-size="28" font-family="Inter, Arial, sans-serif">Battle Royale • Events • Creator Ecosystem</text>
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayerBase — About</title>
+  <meta name="description" content="PlayerBase is a responsive multi-page gaming website with articles, games, esports, a forum and switchable visual styles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="about" data-style-mode="vivid" data-color-theme="aurora">
+  <div class="site-intro" id="siteIntro" aria-hidden="true">
+    <div class="site-intro-mark">PB</div>
+  </div>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">PB</span>
+        <div>
+          <p>Gaming Magazine</p>
+          <strong>PlayerBase</strong>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="games.html">Games</a>
+        <a href="esports.html">Esports</a>
+        <a href="forum.html">Forum</a>
+        <a href="styles.html">Styles</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="styleToggle" type="button" aria-label="Open style panel">Style</button>
+        <button class="icon-btn" id="colorToggle" type="button" aria-label="Open color panel">Color</button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-links" id="mobileLinks">
+      <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="games.html">Games</a>
+        <a href="esports.html">Esports</a>
+        <a href="forum.html">Forum</a>
+        <a href="styles.html">Styles</a>
+        <a href="about.html" class="active">About</a>
+    </div>
+  </header>
+
+  <aside class="floating-panel hidden" id="stylePanel">
+    <p class="mini-kicker">.</p>
+    <h3>.</h3>
+    <div class="swatch-grid" id="styleGrid"></div>
+    <p class="panel-note">.</p>
+  </aside>
+
+  <aside class="floating-panel hidden" id="colorPanel">
+    <p class="mini-kicker">/p>
+    <h3></h3>
+    <div class="swatch-grid" id="colorGrid"></div>
+    <p class="panel-note"></p>
+  </aside>
+
+  <main class="page" id="app"></main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>PlayerBase</strong>
+      <p>video game website.</p>
+    </div>
+    <p>groupe anglais</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
