@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayerBase — Games</title>
+  <meta name="description" content="PlayerBase is a responsive multi-page gaming website with articles, games, esports, a forum and switchable visual styles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="games" data-style-mode="vivid" data-color-theme="aurora">
+  <div class="site-intro" id="siteIntro" aria-hidden="true">
+    <div class="site-intro-mark">PB</div>
+  </div>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">PB</span>
+        <div>
+          <p>Gaming Magazine</p>
+          <strong>PlayerBase</strong>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="games.html" class="active">Games</a>
+        <a href="esports.html">Esports</a>
+        <a href="forum.html">Forum</a>
+        <a href="styles.html">Styles</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="styleToggle" type="button" aria-label="Open style panel">Style</button>
+        <button class="icon-btn" id="colorToggle" type="button" aria-label="Open color panel">Color</button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile-links" id="mobileLinks">
+      <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="games.html" class="active">Games</a>
+        <a href="esports.html">Esports</a>
+        <a href="forum.html">Forum</a>
+        <a href="styles.html">Styles</a>
+        <a href="about.html">About</a>
+    </div>
+  </header>
+
+  <aside class="floating-panel hidden" id="stylePanel">
+    <p class="mini-kicker">Site styles</p>
+    <h3>Switch the full art direction</h3>
+    <div class="swatch-grid" id="styleGrid"></div>
+    <p class="panel-note">Each style changes spacing, surface depth, borders, contrast and overall mood.</p>
+  </aside>
+
+  <aside class="floating-panel hidden" id="colorPanel">
+    <p class="mini-kicker">Accent colors</p>
+    <h3>Change the color system</h3>
+    <div class="swatch-grid" id="colorGrid"></div>
+    <p class="panel-note">Colors and styles are separate, so you can mix both.</p>
+  </aside>
+
+  <main class="page" id="app"></main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>PlayerBase</strong>
+      <p>Multi-page gaming website with editorial and community tools.</p>
+    </div>
+    <p>Style modes • color themes • full-card clicks</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
